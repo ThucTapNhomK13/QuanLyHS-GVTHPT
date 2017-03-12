@@ -1,0 +1,5 @@
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\bin\Debug\Obj.dll
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\bin\Debug\Obj.pdb
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\obj\Debug\Obj.csprojResolveAssemblyReference.cache
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\obj\Debug\Obj.dll
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\obj\Debug\Obj.pdb

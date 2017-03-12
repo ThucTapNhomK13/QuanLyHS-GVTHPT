@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace DAL
 {
-    public class DBConnet
+    public class DBConnect
     {
         
         private string ConSql = ConnectString.StrCon;

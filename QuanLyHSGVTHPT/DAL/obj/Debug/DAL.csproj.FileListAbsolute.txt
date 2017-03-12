@@ -1,0 +1,7 @@
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\DAL.dll
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\DAL.pdb
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\Obj.dll
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\Obj.pdb
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.dll
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.pdb
