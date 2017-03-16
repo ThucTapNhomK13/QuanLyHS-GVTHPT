@@ -13,3 +13,5 @@ C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug
 C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.exe
 C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.pdb
 C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmmain.resources
+C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.exe
+C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.pdb
