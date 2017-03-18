@@ -25,3 +25,6 @@ C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\
 C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmmain.resources
 C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.Properties.Resources.resources
 C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.csproj.GenerateResource.Cache
+C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\DAL.dll
+C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\DAL.pdb
+C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmQuanLyGiaoVien.resources
