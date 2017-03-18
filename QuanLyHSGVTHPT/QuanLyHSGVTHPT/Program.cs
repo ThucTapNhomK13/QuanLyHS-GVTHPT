@@ -16,7 +16,7 @@ namespace QuanLyHSGVTHPT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmmain());
+            Application.Run(new frmQuanLyGiaoVien());
         }
     }
 }
