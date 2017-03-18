@@ -17,6 +17,9 @@ namespace QuanLyHSGVTHPT
             InitializeComponent();
         }
 
+        private void menuquanlygiaovien_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

@@ -89,6 +89,7 @@
             this.menuquanlygiaovien.Name = "menuquanlygiaovien";
             this.menuquanlygiaovien.Size = new System.Drawing.Size(125, 23);
             this.menuquanlygiaovien.Text = "Quản lý giáo viên";
+            this.menuquanlygiaovien.Click += new System.EventHandler(this.menuquanlygiaovien_Click);
             // 
             // menuquanlygiangday
             // 
