@@ -28,3 +28,4 @@ C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\
 C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\DAL.dll
 C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\DAL.pdb
 C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmQuanLyGiaoVien.resources
+C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmAddEdit.resources

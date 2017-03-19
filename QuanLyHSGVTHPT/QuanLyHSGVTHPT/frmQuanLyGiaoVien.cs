@@ -8,14 +8,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using BUS;
+using Obj;
+
 namespace QuanLyHSGVTHPT
 {
     public partial class frmQuanLyGiaoVien : Form
     {
+
+        bool mv;
+        int x, y;
+        private BUSGiaoVien bsGV = new BUSGiaoVien();
+
+
+        private void GetAll()
+        {
+            dgvGiaoVien.DataSource = bsGV.SelectGiaoVien();
+        }
+
+
         public frmQuanLyGiaoVien()
         {
             InitializeComponent();
         }
+
+        
+
+
+
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -36,8 +57,7 @@ namespace QuanLyHSGVTHPT
         }
 
 
-        bool mv;
-        int x, y;
+        
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             mv = true;
@@ -48,6 +68,32 @@ namespace QuanLyHSGVTHPT
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
             mv = false;
+        }
+
+        private void frmQuanLyGiaoVien_Load(object sender, EventArgs e)
+        {
+            GetAll();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            using (frmAddEdit fmAE = new frmAddEdit())
+            {
+                fmAE.ShowDialog();
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            using (frmAddEdit fmAE = new frmAddEdit())
+            {
+                fmAE.ShowDialog();
+            }
         }
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)
