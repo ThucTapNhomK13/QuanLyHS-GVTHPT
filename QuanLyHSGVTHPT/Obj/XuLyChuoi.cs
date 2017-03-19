@@ -18,6 +18,7 @@ namespace Obj
         private static string sodienthoai = @"(\\+84|0)\d{9,10}";
         private static string taikhoan = @"^\w+$";
         private static string ma = @"\d+";
+        private static string kytuhoa = @"^[A-Z]+$";
 
 
         /// <summary>
@@ -77,6 +78,13 @@ namespace Obj
         public static bool KiemTraTaiKhoan(string TaiKhoan = null)
         {
             if (!string.IsNullOrWhiteSpace(TaiKhoan) && Regex.IsMatch(TaiKhoan, taikhoan))
+                return true;
+            return false;
+        }
+
+        public static bool KiemTraKyTuHoa (string kytu = null)
+        {
+            if (!string.IsNullOrWhiteSpace(kytu) && Regex.IsMatch(kytu, kytuhoa))
                 return true;
             return false;
         }

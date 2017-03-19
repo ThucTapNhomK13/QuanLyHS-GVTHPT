@@ -20,7 +20,8 @@ namespace QuanLyHSGVTHPT
 
         private bool mv;
         private int x, y;
-        //private GiaoVien gv;
+        //private bool AorE;
+        
 
         public string Id
         {
@@ -29,6 +30,7 @@ namespace QuanLyHSGVTHPT
             {
                 if (value == null)
                 {
+                    //AorE = true;
                     this.txtMa.Clear();
                     this.txtHoTen.Clear();
                     this.txtQueQuan.Clear();
@@ -41,8 +43,12 @@ namespace QuanLyHSGVTHPT
                 }
                 else
                 {
+                    //AorE = false;
                     DataRow dr = bsGV.SelectGiaoVienID(value);
+
                     this.txtMa.Text = dr["magiaovien"].ToString();
+                    this.txtMa.Enabled = false;
+
                     this.txtHoTen.Text = dr["hovaten"].ToString();
                     this.datNgaySinh.Text = dr["ngaysinh"].ToString();
 
@@ -65,19 +71,19 @@ namespace QuanLyHSGVTHPT
         {
             GiaoVien gv = new GiaoVien();
             gv.Ma = txtMa.Text;
-            gv.HoTen = txtHoTen.Text ;
+            gv.HoTen = XuLyChuoi.VietHoaChuCaiDau (txtHoTen.Text) ;
             gv.NgaySinh = DateTime.Parse( datNgaySinh.Text) ;
 
-            gv.GioiTinh = cmdGioiTinh.Text ;
-            gv.TinhTrang = cmdTinhTrang.Text ;
+            gv.GioiTinh = XuLyChuoi.VietHoaChuCaiDau (cmdGioiTinh.Text) ;
+            gv.TinhTrang = XuLyChuoi.VietHoaChuCaiDau (cmdTinhTrang.Text) ;
 
-            gv.TonGiao = txtTonGiao.Text;
-            gv.QueQuan = txtQueQuan.Text;
-            gv.DiaChiThuongChu = txtDiaChi.Text ;
+            gv.TonGiao = XuLyChuoi.VietHoaChuCaiDau (txtTonGiao.Text);
+            gv.QueQuan = XuLyChuoi.VietHoaChuCaiDau (txtQueQuan.Text);
+            gv.DiaChiThuongChu = XuLyChuoi.VietHoaChuCaiDau (txtDiaChi.Text) ;
             gv.SoDienThoai = txtSDT.Text ;
-            gv.HocVi = txtHocVi.Text ;
-            gv.ChucVu = txtChucVu.Text;
-            gv.ChuyenMon = txtChuyenMon.Text;
+            gv.HocVi = XuLyChuoi.VietHoa (txtHocVi.Text) ;
+            gv.ChucVu = XuLyChuoi.VietHoa (txtChucVu.Text);
+            gv.ChuyenMon = XuLyChuoi.VietHoa (txtChuyenMon.Text);
             gv.Luong = txtLuong.Text ;
 
             return gv;
@@ -87,6 +93,7 @@ namespace QuanLyHSGVTHPT
         {
             InitializeComponent();
         }
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -127,6 +134,8 @@ namespace QuanLyHSGVTHPT
         {
 
         }
+
+        
 
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
