@@ -236,7 +236,7 @@
             // clMa
             // 
             this.clMa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.clMa.DataPropertyName = "ma";
+            this.clMa.DataPropertyName = "magiaovien";
             this.clMa.HeaderText = "Mã";
             this.clMa.Name = "clMa";
             // 
@@ -278,7 +278,7 @@
             // clDiaChi
             // 
             this.clDiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.clDiaChi.DataPropertyName = "diachithuongchu";
+            this.clDiaChi.DataPropertyName = "diachithuongtru";
             this.clDiaChi.HeaderText = "Địa chỉ";
             this.clDiaChi.Name = "clDiaChi";
             // 
@@ -339,6 +339,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmQuanLyGiaoVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý giáo viên";
             this.Load += new System.EventHandler(this.frmQuanLyGiaoVien_Load);
             this.panel1.ResumeLayout(false);
