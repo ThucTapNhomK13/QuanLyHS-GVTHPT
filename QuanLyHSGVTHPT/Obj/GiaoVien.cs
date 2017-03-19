@@ -195,7 +195,7 @@ namespace Obj
         }
 
 
-        public GiaoVien (DataRow dr)
+        public GiaoVien(DataRow dr)
         {
             Ma = dr["magiaovien"].ToString();
             HoTen = dr["hovaten"].ToString();
@@ -209,6 +209,25 @@ namespace Obj
             ChuyenMon = dr["chuyenmon"].ToString();
             TinhTrang = dr["tinhtrang"].ToString();
             Luong = dr["luong"].ToString();
+        }
+
+        public GiaoVien() { }
+
+        public GiaoVien  (GiaoVien gv)
+        {
+            Ma = gv.Ma;
+            HoTen = gv.HoTen;
+            NgaySinh = gv.NgaySinh;
+            GioiTinh = gv.GioiTinh;
+            TonGiao = gv.TonGiao;
+            QueQuan = gv.QueQuan;
+            DiaChiThuongChu = gv.DiaChiThuongChu;
+            SoDienThoai = gv.SoDienThoai;
+            HocVi = gv.HocVi;
+            ChucVu = gv.ChucVu;
+            ChuyenMon = gv.ChuyenMon;
+            TinhTrang = gv.TinhTrang;
+            Luong = gv.Luong;
         }
 
 

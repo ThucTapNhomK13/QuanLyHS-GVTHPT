@@ -30,6 +30,7 @@
         {
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnMin = new System.Windows.Forms.Button();
             this.btnMax = new System.Windows.Forms.Button();
             this.dgvGiaoVien = new System.Windows.Forms.DataGridView();
@@ -38,7 +39,7 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
             this.clMa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,6 +89,17 @@
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(553, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Quản lý giáo viên";
+            // 
             // btnMin
             // 
             this.btnMin.Dock = System.Windows.Forms.DockStyle.Right;
@@ -125,9 +137,7 @@
             // 
             this.dgvGiaoVien.AllowUserToAddRows = false;
             this.dgvGiaoVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvGiaoVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            this.dgvGiaoVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            this.dgvGiaoVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGiaoVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvGiaoVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clMa,
             this.clHoTen,
@@ -144,11 +154,7 @@
             this.clLuong});
             this.dgvGiaoVien.Location = new System.Drawing.Point(12, 109);
             this.dgvGiaoVien.Name = "dgvGiaoVien";
-            this.dgvGiaoVien.RowHeadersVisible = false;
-            this.dgvGiaoVien.ShowCellErrors = false;
-            this.dgvGiaoVien.ShowCellToolTips = false;
             this.dgvGiaoVien.ShowEditingIcon = false;
-            this.dgvGiaoVien.ShowRowErrors = false;
             this.dgvGiaoVien.Size = new System.Drawing.Size(1230, 387);
             this.dgvGiaoVien.TabIndex = 3;
             // 
@@ -162,7 +168,7 @@
             this.btnSearch.Location = new System.Drawing.Point(144, 56);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(82, 29);
-            this.btnSearch.TabIndex = 4;
+            this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -176,7 +182,7 @@
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(549, 29);
-            this.txtTimKiem.TabIndex = 5;
+            this.txtTimKiem.TabIndex = 0;
             // 
             // btnEdit
             // 
@@ -185,10 +191,10 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEdit.Location = new System.Drawing.Point(184, 517);
+            this.btnEdit.Location = new System.Drawing.Point(198, 517);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(111, 35);
-            this.btnEdit.TabIndex = 7;
+            this.btnEdit.TabIndex = 3;
             this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -200,12 +206,13 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDelete.Location = new System.Drawing.Point(356, 517);
+            this.btnDelete.Location = new System.Drawing.Point(384, 517);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(111, 35);
-            this.btnDelete.TabIndex = 8;
+            this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -217,40 +224,49 @@
             this.btnAdd.Location = new System.Drawing.Point(12, 517);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(111, 35);
-            this.btnAdd.TabIndex = 6;
+            this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // label1
+            // btnReset
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(553, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 25);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Quản lý giáo viên";
+            this.btnReset.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnReset.Location = new System.Drawing.Point(1131, 517);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(111, 35);
+            this.btnReset.TabIndex = 5;
+            this.btnReset.Text = "Làm mới";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // clMa
             // 
-            this.clMa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clMa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.clMa.DataPropertyName = "magiaovien";
+            this.clMa.FillWeight = 329.9492F;
             this.clMa.HeaderText = "Mã";
             this.clMa.Name = "clMa";
+            this.clMa.Width = 50;
             // 
             // clHoTen
             // 
-            this.clHoTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clHoTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.clHoTen.DataPropertyName = "hovaten";
+            this.clHoTen.FillWeight = 80.83756F;
             this.clHoTen.HeaderText = "Họ tên";
             this.clHoTen.Name = "clHoTen";
+            this.clHoTen.Width = 136;
             // 
             // clNgaySinh
             // 
             this.clNgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.clNgaySinh.DataPropertyName = "ngaysinh";
+            this.clNgaySinh.FillWeight = 80.83756F;
             this.clNgaySinh.HeaderText = "Ngày sinh";
             this.clNgaySinh.Name = "clNgaySinh";
             // 
@@ -258,6 +274,7 @@
             // 
             this.clGioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.clGioiTinh.DataPropertyName = "gioitinh";
+            this.clGioiTinh.FillWeight = 80.83756F;
             this.clGioiTinh.HeaderText = "Giói tính";
             this.clGioiTinh.Name = "clGioiTinh";
             // 
@@ -265,6 +282,7 @@
             // 
             this.clTonGiao.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.clTonGiao.DataPropertyName = "tongiao";
+            this.clTonGiao.FillWeight = 80.83756F;
             this.clTonGiao.HeaderText = "Tôn giáo";
             this.clTonGiao.Name = "clTonGiao";
             // 
@@ -272,6 +290,7 @@
             // 
             this.clQueQuan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.clQueQuan.DataPropertyName = "quequan";
+            this.clQueQuan.FillWeight = 80.83756F;
             this.clQueQuan.HeaderText = "Quê quán";
             this.clQueQuan.Name = "clQueQuan";
             // 
@@ -279,6 +298,7 @@
             // 
             this.clDiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.clDiaChi.DataPropertyName = "diachithuongtru";
+            this.clDiaChi.FillWeight = 80.83756F;
             this.clDiaChi.HeaderText = "Địa chỉ";
             this.clDiaChi.Name = "clDiaChi";
             // 
@@ -286,6 +306,7 @@
             // 
             this.clSDT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.clSDT.DataPropertyName = "sodienthoai";
+            this.clSDT.FillWeight = 80.83756F;
             this.clSDT.HeaderText = "SDT";
             this.clSDT.Name = "clSDT";
             // 
@@ -293,6 +314,7 @@
             // 
             this.clHocVi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.clHocVi.DataPropertyName = "hocvi";
+            this.clHocVi.FillWeight = 80.83756F;
             this.clHocVi.HeaderText = "Học vị";
             this.clHocVi.Name = "clHocVi";
             // 
@@ -300,6 +322,7 @@
             // 
             this.clChucVu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.clChucVu.DataPropertyName = "chucvu";
+            this.clChucVu.FillWeight = 80.83756F;
             this.clChucVu.HeaderText = "Chức vụ";
             this.clChucVu.Name = "clChucVu";
             // 
@@ -307,6 +330,7 @@
             // 
             this.clChuyenMon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.clChuyenMon.DataPropertyName = "chuyenmon";
+            this.clChuyenMon.FillWeight = 80.83756F;
             this.clChuyenMon.HeaderText = "Chuyên môn";
             this.clChuyenMon.Name = "clChuyenMon";
             // 
@@ -314,6 +338,7 @@
             // 
             this.clTinhTrang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.clTinhTrang.DataPropertyName = "tinhtrang";
+            this.clTinhTrang.FillWeight = 80.83756F;
             this.clTinhTrang.HeaderText = "Tình trạng";
             this.clTinhTrang.Name = "clTinhTrang";
             // 
@@ -321,6 +346,7 @@
             // 
             this.clLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.clLuong.DataPropertyName = "luong";
+            this.clLuong.FillWeight = 80.83756F;
             this.clLuong.HeaderText = "Lương";
             this.clLuong.Name = "clLuong";
             // 
@@ -329,7 +355,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
-            this.ClientSize = new System.Drawing.Size(1254, 566);
+            this.ClientSize = new System.Drawing.Size(1254, 571);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
@@ -362,6 +389,7 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.DataGridViewTextBoxColumn clMa;
         private System.Windows.Forms.DataGridViewTextBoxColumn clHoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn clNgaySinh;

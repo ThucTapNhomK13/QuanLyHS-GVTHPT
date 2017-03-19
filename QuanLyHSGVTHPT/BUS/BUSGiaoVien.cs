@@ -78,7 +78,7 @@ namespace BUS
             sqlQuery += ", chuyenmon = @chuyenmon";
             sqlQuery += ", tinhtrang = @tinhtrang";
             sqlQuery += ", luong = @luong";
-            sqlQuery += " WHERE ma = @ma ";
+            sqlQuery += " WHERE magiaovien = @ma ";
 
             Dictionary<string, object> parameters = new Dictionary<string, object>();
 
@@ -110,7 +110,22 @@ namespace BUS
             return con.InsertUpdateDelete(sqlQuery, false, para);
         }
 
+        public DataTable Search (string txt)
+        {
+            string sqlQuery = " select * from GiaoVien ";
+            sqlQuery += " where ";
+            sqlQuery += " magiaovien like '%'+@ma+'%' ";
+            sqlQuery += " union ";
+            sqlQuery += " select * from GiaoVien ";
+            sqlQuery += " where ";
+            sqlQuery += " hovaten like '%'+@hoten+'%' ";
 
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters.Add("@ma", txt);
+            parameters.Add("@hoten", txt);
+
+            return con.Select(sqlQuery, false, parameters);
+        }
 
 
 

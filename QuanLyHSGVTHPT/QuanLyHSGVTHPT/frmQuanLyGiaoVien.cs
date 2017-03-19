@@ -26,6 +26,11 @@ namespace QuanLyHSGVTHPT
             dgvGiaoVien.DataSource = bsGV.SelectGiaoVien();
         }
 
+        //private void GetSearch ()
+        //{
+        //    dgvGiaoVien.DataSource = bsGV.Search(txtTimKiem.Text);
+        //}
+
 
         public frmQuanLyGiaoVien()
         {
@@ -77,14 +82,25 @@ namespace QuanLyHSGVTHPT
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
+            dgvGiaoVien.DataSource = bsGV.Search(txtTimKiem.Text);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             using (frmAddEdit fmAE = new frmAddEdit())
             {
-                fmAE.ShowDialog();
+                fmAE.Id = null;
+                if (fmAE.ShowDialog() == DialogResult.OK)
+                {
+                    GiaoVien gv = fmAE.getGiaoVien();
+                    if (bsGV.InsertGiaoVien(gv))
+                        MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Thêm thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);  
+                }
+                else
+                    return;
+
             }
         }
 
@@ -92,8 +108,37 @@ namespace QuanLyHSGVTHPT
         {
             using (frmAddEdit fmAE = new frmAddEdit())
             {
-                fmAE.ShowDialog();
+                int selectIndex = dgvGiaoVien.SelectedRows[0].Index;
+                string id = dgvGiaoVien[0, selectIndex].Value.ToString();
+
+                fmAE.Id = id;
+                if (fmAE.ShowDialog() == DialogResult.OK)
+                {
+                    GiaoVien gv = fmAE.getGiaoVien();
+                    if (bsGV.UpdateGiaoVien(gv))
+                        MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Sửa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                    return;
             }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            GetAll();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int selectIndex = dgvGiaoVien.SelectedRows[0].Index;
+            string id = dgvGiaoVien[0, selectIndex].Value.ToString();
+
+            if (bsGV.DeleteGiaoVien(id))
+                MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Xóa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)
