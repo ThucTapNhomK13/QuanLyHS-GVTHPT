@@ -16,5 +16,11 @@ namespace QuanLyHSGVTHPT
         {
             InitializeComponent();
         }
+
+        private void menuquanlygiaovien_Click(object sender, EventArgs e)
+        {
+            frmQuanLyGiaoVien qlgv = new frmQuanLyGiaoVien();
+            qlgv.ShowDialog();
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace DAL
     {
         
         private string ConSql = ConnectString.StrCon;
+
         /// <summary>
         /// Select in sql 
         /// </summary>

@@ -9,7 +9,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS", "BUS\BUS.csproj", "{B0332107-427E-4B2D-897B-0D9B8E25672A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "Obj\DTO.csproj", "{F3CAE807-4DCA-4EA9-BB30-F6E4216D3C88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obj", "Obj\Obj.csproj", "{F3CAE807-4DCA-4EA9-BB30-F6E4216D3C88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Icon", "Icon", "{9AF1C6D7-6DB9-496D-A362-9B47913624FC}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Pictures\file.png = ..\..\..\..\Pictures\file.png
+		..\..\..\..\Pictures\loupe.png = ..\..\..\..\Pictures\loupe.png
+		..\..\..\..\Pictures\minus.png = ..\..\..\..\Pictures\minus.png
+		..\..\..\..\Pictures\plus (1).png = ..\..\..\..\Pictures\plus (1).png
+		..\..\..\..\Pictures\plus.png = ..\..\..\..\Pictures\plus.png
+		..\..\..\..\Pictures\refresh.png = ..\..\..\..\Pictures\refresh.png
+		..\..\..\..\Pictures\rotate.png = ..\..\..\..\Pictures\rotate.png
+		..\..\..\..\Pictures\rubbish-bin.png = ..\..\..\..\Pictures\rubbish-bin.png
+		..\..\..\..\Pictures\settings.png = ..\..\..\..\Pictures\settings.png
+		..\..\..\..\Pictures\unchecked.png = ..\..\..\..\Pictures\unchecked.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
