@@ -141,6 +141,16 @@ namespace QuanLyHSGVTHPT
                 MessageBox.Show("Xóa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        private void btnExit_MouseHover(object sender, EventArgs e)
+        {
+            btnExit.ForeColor = Color.White;
+        }
+
+        private void btnExit_MouseLeave(object sender, EventArgs e)
+        {
+            btnExit.ForeColor = Color.Black;
+        }
+
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
             if (mv)

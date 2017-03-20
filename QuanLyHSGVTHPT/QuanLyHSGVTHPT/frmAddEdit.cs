@@ -135,8 +135,6 @@ namespace QuanLyHSGVTHPT
 
         }
 
-        
-
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
             mv = false;
