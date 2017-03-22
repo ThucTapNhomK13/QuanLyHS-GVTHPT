@@ -124,6 +124,7 @@
             this.menuhuongdansudung.Name = "menuhuongdansudung";
             this.menuhuongdansudung.Size = new System.Drawing.Size(141, 23);
             this.menuhuongdansudung.Text = "Hướng dẫn sử dụng";
+            this.menuhuongdansudung.Click += new System.EventHandler(this.menuhuongdansudung_Click);
             // 
             // frmmain
             // 

@@ -22,5 +22,12 @@ namespace QuanLyHSGVTHPT
             frmQuanLyGiaoVien qlgv = new frmQuanLyGiaoVien();
             qlgv.ShowDialog();
         }
+
+        private void menuhuongdansudung_Click(object sender, EventArgs e)
+        {
+            frmHelp help = new frmHelp();
+            this.Hide();
+            help.Show();
+        }
     }
 }
