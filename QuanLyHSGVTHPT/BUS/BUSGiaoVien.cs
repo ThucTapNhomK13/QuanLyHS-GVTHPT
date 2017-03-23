@@ -38,8 +38,10 @@ namespace BUS
 
         public bool InsertGiaoVien (GiaoVien gv)
         {
-            string sqlQuery = @"insert into GiaoVien ";
-            sqlQuery += "values ";
+            string sqlQuery = @" if not exists ";
+            sqlQuery += " ( select * from GiaoVien where magiaovien = @ma) ";
+            sqlQuery += " insert into GiaoVien ";
+            sqlQuery += " values ";
             sqlQuery += " ( @ma, @hoten, @ngaysinh, @gioitinh, @tongiao, @quequan, ";
             sqlQuery += " @diachi, @sdt, @hocvi, @chucvu, @chuyenmon, @tinhtrang, @luong ) ";
 
