@@ -12,3 +12,10 @@ C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\O
 C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.dll
 C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.pdb
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\DAL.dll
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\DAL.pdb
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\Obj.dll
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\Obj.pdb
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.dll
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.pdb

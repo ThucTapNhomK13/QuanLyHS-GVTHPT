@@ -32,3 +32,21 @@ C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\
 C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmQuanLyGiaoVien.resources
 C:\Users\mkcuong\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmAddEdit.resources
 >>>>>>> mkcuong
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\QuanLyHSGVTHPT.exe.config
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.exe
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.pdb
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\QuanLyHSGVTHPT.exe
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\QuanLyHSGVTHPT.pdb
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\BUS.dll
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\Obj.dll
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\DAL.dll
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\BUS.pdb
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\Obj.pdb
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\DAL.pdb
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.csprojResolveAssemblyReference.cache
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmAddEdit.resources
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmmain.resources
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmQuanLyGiaoVien.resources
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.Properties.Resources.resources
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.csproj.GenerateResource.Cache
+C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmHelp.resources
