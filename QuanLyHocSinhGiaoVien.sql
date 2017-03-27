@@ -82,3 +82,12 @@ CREATE TABLE KetQuaHocTap(
 )
 	
 
+CREATE TABLE QuanLiGiangDay(
+	[giaovienma] [varchar](10) REFERENCES GiaoVien(magiaovien),
+	[monhocma] [varchar](10) REFERENCES MonHoc(mamonhoc),
+	[lopma] [varchar](10) REFERENCES Lop(malop),
+	[ngaybatdau] [datetime] NULL,
+	[ngayketthuc] [datetime] NULL,
+	PRIMARY KEY(giaovienma, monhocma, lopma)
+)
+
