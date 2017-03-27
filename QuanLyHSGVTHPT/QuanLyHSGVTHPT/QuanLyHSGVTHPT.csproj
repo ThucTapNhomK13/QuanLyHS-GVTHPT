@@ -72,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmQuanLiGiangDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLiGiangDay.Designer.cs">
+      <DependentUpon>frmQuanLiGiangDay.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmAddEdit.resx">
       <DependentUpon>frmAddEdit.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +99,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmQuanLiGiangDay.resx">
+      <DependentUpon>frmQuanLiGiangDay.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

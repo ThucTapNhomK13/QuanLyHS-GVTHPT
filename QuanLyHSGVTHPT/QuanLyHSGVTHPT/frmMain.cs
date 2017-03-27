@@ -29,5 +29,12 @@ namespace QuanLyHSGVTHPT
             this.Hide();
             help.Show();
         }
+
+        private void menuquanlygiangday_Click(object sender, EventArgs e)
+        {
+            frmQuanLiGiangDay ql = new frmQuanLiGiangDay();
+            this.Hide();
+            ql.Show();
+        }
     }
 }

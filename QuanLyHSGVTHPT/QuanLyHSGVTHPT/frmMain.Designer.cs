@@ -35,9 +35,6 @@
             this.itemxoahocsinh = new System.Windows.Forms.ToolStripMenuItem();
             this.menuquanlygiaovien = new System.Windows.Forms.ToolStripMenuItem();
             this.menuquanlygiangday = new System.Windows.Forms.ToolStripMenuItem();
-            this.thôngTinGiảngDạyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cậpNhậtThôngTinGiảngDạyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xóaThôngTinGiảngDạyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuhuongdansudung = new System.Windows.Forms.ToolStripMenuItem();
             this.menuChinh.SuspendLayout();
             this.SuspendLayout();
@@ -93,31 +90,10 @@
             // 
             // menuquanlygiangday
             // 
-            this.menuquanlygiangday.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thôngTinGiảngDạyToolStripMenuItem,
-            this.cậpNhậtThôngTinGiảngDạyToolStripMenuItem,
-            this.xóaThôngTinGiảngDạyToolStripMenuItem});
             this.menuquanlygiangday.Name = "menuquanlygiangday";
             this.menuquanlygiangday.Size = new System.Drawing.Size(129, 23);
             this.menuquanlygiangday.Text = "Quản lý giảng dạy";
-            // 
-            // thôngTinGiảngDạyToolStripMenuItem
-            // 
-            this.thôngTinGiảngDạyToolStripMenuItem.Name = "thôngTinGiảngDạyToolStripMenuItem";
-            this.thôngTinGiảngDạyToolStripMenuItem.Size = new System.Drawing.Size(249, 24);
-            this.thôngTinGiảngDạyToolStripMenuItem.Text = "Thông tin giảng dạy";
-            // 
-            // cậpNhậtThôngTinGiảngDạyToolStripMenuItem
-            // 
-            this.cậpNhậtThôngTinGiảngDạyToolStripMenuItem.Name = "cậpNhậtThôngTinGiảngDạyToolStripMenuItem";
-            this.cậpNhậtThôngTinGiảngDạyToolStripMenuItem.Size = new System.Drawing.Size(249, 24);
-            this.cậpNhậtThôngTinGiảngDạyToolStripMenuItem.Text = "Cập nhật thông tin giảng dạy";
-            // 
-            // xóaThôngTinGiảngDạyToolStripMenuItem
-            // 
-            this.xóaThôngTinGiảngDạyToolStripMenuItem.Name = "xóaThôngTinGiảngDạyToolStripMenuItem";
-            this.xóaThôngTinGiảngDạyToolStripMenuItem.Size = new System.Drawing.Size(249, 24);
-            this.xóaThôngTinGiảngDạyToolStripMenuItem.Text = "Xóa thông tin giảng dạy";
+            this.menuquanlygiangday.Click += new System.EventHandler(this.menuquanlygiangday_Click);
             // 
             // menuhuongdansudung
             // 
@@ -154,9 +130,6 @@
         private System.Windows.Forms.ToolStripMenuItem itemxoahocsinh;
         private System.Windows.Forms.ToolStripMenuItem menuquanlygiaovien;
         private System.Windows.Forms.ToolStripMenuItem menuquanlygiangday;
-        private System.Windows.Forms.ToolStripMenuItem thôngTinGiảngDạyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cậpNhậtThôngTinGiảngDạyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem xóaThôngTinGiảngDạyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem menuhuongdansudung;
     }
 }

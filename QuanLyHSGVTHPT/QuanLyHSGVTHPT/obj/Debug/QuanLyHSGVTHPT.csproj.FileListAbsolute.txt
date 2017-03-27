@@ -50,3 +50,9 @@ C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\ob
 C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.Properties.Resources.resources
 C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.csproj.GenerateResource.Cache
 C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmHelp.resources
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\DAL.dll
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\DAL.pdb
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmAddEdit.resources
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmHelp.resources
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmQuanLyGiaoVien.resources
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmQuanLiGiangDay.resources
