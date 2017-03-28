@@ -64,11 +64,11 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQuanLyGiaoVien.cs">
+    <Compile Include="frmQuanLiGiaoVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmQuanLyGiaoVien.Designer.cs">
-      <DependentUpon>frmQuanLyGiaoVien.cs</DependentUpon>
+    <Compile Include="frmQuanLiGiaoVien.Designer.cs">
+      <DependentUpon>frmQuanLiGiaoVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,8 +87,8 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLyGiaoVien.resx">
-      <DependentUpon>frmQuanLyGiaoVien.cs</DependentUpon>
+    <EmbeddedResource Include="frmQuanLiGiaoVien.resx">
+      <DependentUpon>frmQuanLiGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

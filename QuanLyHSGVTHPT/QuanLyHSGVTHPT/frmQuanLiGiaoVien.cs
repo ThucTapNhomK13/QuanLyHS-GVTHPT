@@ -13,7 +13,7 @@ using Obj;
 
 namespace QuanLyHSGVTHPT
 {
-    public partial class frmQuanLyGiaoVien : Form
+    public partial class frmQuanLiGiaoVien : Form
     {
 
         bool mv;
@@ -32,7 +32,7 @@ namespace QuanLyHSGVTHPT
         //}
 
 
-        public frmQuanLyGiaoVien()
+        public frmQuanLiGiaoVien()
         {
             InitializeComponent();
         }

@@ -19,22 +19,21 @@ namespace QuanLyHSGVTHPT
 
         private void menuquanlygiaovien_Click(object sender, EventArgs e)
         {
-            frmQuanLyGiaoVien qlgv = new frmQuanLyGiaoVien();
+            frmQuanLiGiaoVien qlgv = new frmQuanLiGiaoVien();
             qlgv.ShowDialog();
         }
 
         private void menuhuongdansudung_Click(object sender, EventArgs e)
         {
             frmHelp help = new frmHelp();
-            this.Hide();
-            help.Show();
+            help.ShowDialog();
         }
 
         private void menuquanlygiangday_Click(object sender, EventArgs e)
         {
             frmQuanLiGiangDay ql = new frmQuanLiGiangDay();
-            this.Hide();
-            ql.Show();
+            ql.ShowDialog();
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace QuanLyHSGVTHPT
 {
-    partial class frmQuanLyGiaoVien
+    partial class frmQuanLiGiaoVien
     {
         /// <summary>
         /// Required designer variable.

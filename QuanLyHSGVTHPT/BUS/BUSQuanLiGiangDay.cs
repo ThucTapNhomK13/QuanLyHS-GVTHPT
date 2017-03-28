@@ -20,5 +20,7 @@ namespace BUS
             string sql = "select * from QuanLiGiangDay";
             return con.Select(sql, false, null);
         }
+
+
     }
 }
