@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Obj
 {
-    class QuanLiGiangDay
+    public class QuanLiGiangDay
     {
         private string _magiaovien;
         private string _mamonhoc;
         private string _malop;
-        private DateTime _ngaybatdau;
-        private DateTime _ngayketthuc;
+        private string _tiethoc;
+        private string _diadiem;
 
         public string MaGiaoVien
         {
@@ -52,29 +52,29 @@ namespace Obj
             }
         }
 
-        public DateTime NgayBatdau
+        public string TietHoc
         {
             get
             {
-                return _ngaybatdau;
+                return _tiethoc;
             }
 
             set
             {
-                _ngaybatdau = value;
+                _tiethoc = value;
             }
         }
 
-        public DateTime NgayKetThuc
+        public string DiaDiem
         {
             get
             {
-                return _ngayketthuc;
+                return _diadiem;
             }
 
             set
             {
-                _ngayketthuc = value;
+                _diadiem = value;
             }
         }
     }

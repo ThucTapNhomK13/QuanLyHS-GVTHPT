@@ -11,16 +11,15 @@ using Obj;
 
 namespace BUS
 {
-    class BUSQuanLiGiangDay
+    public class BUSQuanLiGiangDay
     {
         private DBConnect con = new DBConnect();
 
         public DataTable GetLichGiangDay()
         {
-            string sql = "select * from QuanLiGiangDay";
+            string sql = "select * from func_ThongTinGiangDay()";
             return con.Select(sql, false, null);
         }
-
 
     }
 }

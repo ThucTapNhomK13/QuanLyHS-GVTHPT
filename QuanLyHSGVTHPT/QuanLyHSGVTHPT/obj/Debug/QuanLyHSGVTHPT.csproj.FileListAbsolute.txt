@@ -56,3 +56,4 @@ C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug
 C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmHelp.resources
 C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmQuanLyGiaoVien.resources
 C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmQuanLiGiangDay.resources
+C:\Users\MienAnh\Desktop\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\obj\Debug\QuanLyHSGVTHPT.frmQuanLiGiaoVien.resources
