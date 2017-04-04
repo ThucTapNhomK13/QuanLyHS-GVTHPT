@@ -91,3 +91,5 @@ CREATE TABLE QuanLiGiangDay(
 	PRIMARY KEY(giaovienma, monhocma, lopma)
 )
 
+alter table QuanLiGiangDay add column tiethoc varchar(10);
+alter table QuanLiGiangDay add column diadiem varchar(10);
