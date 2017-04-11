@@ -93,3 +93,26 @@ CREATE TABLE QuanLiGiangDay(
 
 alter table QuanLiGiangDay add column tiethoc varchar(10);
 alter table QuanLiGiangDay add column diadiem varchar(10);
+
+
+CREATE FUNCTION [dbo].[func_ThongTinGiangDay]()
+RETURNS TABLE
+AS
+	RETURN (SELECT A.hovaten, mh.tenmonhoc, A.lopma, A.tiethoc, A.diadiem			FROM MonHoc mh inner join (SELECT gv.hovaten, ql.monhocma,				ql.lopma, ql.tiethoc, ql.diadiem FROM QuanLiGiangDay ql inner			join GiaoVien gv ON gv.magiaovien = ql.giaovienma) A
+			ON A.monhocma=mh.mamonhoc)
+			
+
+create function [dbo].[func_ThongTinGiaoVien]()
+returns table
+as 
+return (select gv.magiaovien, gv.hovaten, gv.ngaysinh, gv.gioitinh from GiaoVien gv)
+
+
+
+
+
+
+
+
+
+
