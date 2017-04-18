@@ -13,6 +13,8 @@ namespace Obj
         private string _malop;
         private string _tiethoc;
         private string _diadiem;
+        private DateTime _ngaybatdau;
+        private DateTime _ngayketthuc;
 
         public string MaGiaoVien
         {
@@ -75,6 +77,32 @@ namespace Obj
             set
             {
                 _diadiem = value;
+            }
+        }
+
+        public DateTime NgayBatDau
+        {
+            get
+            {
+                return _ngaybatdau;
+            }
+
+            set
+            {
+                _ngaybatdau = value;
+            }
+        }
+
+        public DateTime NgayKetThuc
+        {
+            get
+            {
+                return _ngayketthuc;
+            }
+
+            set
+            {
+                _ngayketthuc = value;
             }
         }
     }

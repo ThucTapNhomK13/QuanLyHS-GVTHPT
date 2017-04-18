@@ -25,3 +25,12 @@ C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\bin\Debug\Obj
 C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\obj\Debug\BUS.dll
 C:\Users\occho\documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\obj\Debug\BUS.pdb
+C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\bin\Debug\BUS.dll
+C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\bin\Debug\BUS.pdb
+C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\bin\Debug\DAL.dll
+C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\bin\Debug\Obj.dll
+C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\bin\Debug\DAL.pdb
+C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\bin\Debug\Obj.pdb
+C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\obj\Debug\BUS.dll
+C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\BUS\obj\Debug\BUS.pdb

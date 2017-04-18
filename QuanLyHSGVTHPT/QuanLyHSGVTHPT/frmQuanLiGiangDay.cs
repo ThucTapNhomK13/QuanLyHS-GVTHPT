@@ -35,5 +35,21 @@ namespace QuanLyHSGVTHPT
         {
             this.Close();
         }
+
+        private void btnThemMoi_Click(object sender, EventArgs e)
+        {
+            frmThemQuanLiGiangDay frmThem = new frmThemQuanLiGiangDay();
+            frmThem.ShowDialog();
+        }
+
+        private void btnChinhSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXacNhan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

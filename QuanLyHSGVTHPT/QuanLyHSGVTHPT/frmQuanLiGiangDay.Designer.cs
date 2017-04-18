@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvQuanLiGiangDay = new System.Windows.Forms.DataGridView();
-            this.lblLichGiangDay = new System.Windows.Forms.Label();
             this.mamonhoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hovaten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenmonhoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenlop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tiethoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diadiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblLichGiangDay = new System.Windows.Forms.Label();
             this.btnThemMoi = new System.Windows.Forms.Button();
             this.btnChinhSua = new System.Windows.Forms.Button();
             this.btnXacNhan = new System.Windows.Forms.Button();
@@ -47,14 +47,14 @@
             // dgvQuanLiGiangDay
             // 
             this.dgvQuanLiGiangDay.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvQuanLiGiangDay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvQuanLiGiangDay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvQuanLiGiangDay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvQuanLiGiangDay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mamonhoc,
@@ -68,16 +68,6 @@
             this.dgvQuanLiGiangDay.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvQuanLiGiangDay.Size = new System.Drawing.Size(842, 393);
             this.dgvQuanLiGiangDay.TabIndex = 0;
-            // 
-            // lblLichGiangDay
-            // 
-            this.lblLichGiangDay.AutoSize = true;
-            this.lblLichGiangDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLichGiangDay.Location = new System.Drawing.Point(12, 17);
-            this.lblLichGiangDay.Name = "lblLichGiangDay";
-            this.lblLichGiangDay.Size = new System.Drawing.Size(95, 16);
-            this.lblLichGiangDay.TabIndex = 1;
-            this.lblLichGiangDay.Text = "Lịch giảng dạy";
             // 
             // mamonhoc
             // 
@@ -116,6 +106,16 @@
             this.diadiem.HeaderText = "Địa điểm";
             this.diadiem.Name = "diadiem";
             // 
+            // lblLichGiangDay
+            // 
+            this.lblLichGiangDay.AutoSize = true;
+            this.lblLichGiangDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLichGiangDay.Location = new System.Drawing.Point(12, 17);
+            this.lblLichGiangDay.Name = "lblLichGiangDay";
+            this.lblLichGiangDay.Size = new System.Drawing.Size(95, 16);
+            this.lblLichGiangDay.TabIndex = 1;
+            this.lblLichGiangDay.Text = "Lịch giảng dạy";
+            // 
             // btnThemMoi
             // 
             this.btnThemMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,6 +125,7 @@
             this.btnThemMoi.TabIndex = 2;
             this.btnThemMoi.Text = "Thêm Mới";
             this.btnThemMoi.UseVisualStyleBackColor = true;
+            this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
             // 
             // btnChinhSua
             // 
@@ -135,6 +136,7 @@
             this.btnChinhSua.TabIndex = 3;
             this.btnChinhSua.Text = "Chỉnh Sửa";
             this.btnChinhSua.UseVisualStyleBackColor = true;
+            this.btnChinhSua.Click += new System.EventHandler(this.btnChinhSua_Click);
             // 
             // btnXacNhan
             // 
@@ -145,6 +147,7 @@
             this.btnXacNhan.TabIndex = 4;
             this.btnXacNhan.Text = "Xác Nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // btnThoat
             // 
