@@ -35,8 +35,6 @@
             this.lblNgayKetThuc = new System.Windows.Forms.Label();
             this.lblTietHoc = new System.Windows.Forms.Label();
             this.lblDiaDiem = new System.Windows.Forms.Label();
-            this.txtNgayBatDau = new System.Windows.Forms.TextBox();
-            this.txtNgayKetThuc = new System.Windows.Forms.TextBox();
             this.txtTietHoc = new System.Windows.Forms.TextBox();
             this.txtDiaDiem = new System.Windows.Forms.TextBox();
             this.cmbTenGiaoVien = new System.Windows.Forms.ComboBox();
@@ -44,6 +42,8 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.cmbMonHoc = new System.Windows.Forms.ComboBox();
+            this.datNgayBatDau = new System.Windows.Forms.DateTimePicker();
+            this.datNgayKetThuc = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lblTenGiaoVien
@@ -116,22 +116,6 @@
             this.lblDiaDiem.TabIndex = 6;
             this.lblDiaDiem.Text = "Địa điểm";
             // 
-            // txtNgayBatDau
-            // 
-            this.txtNgayBatDau.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgayBatDau.Location = new System.Drawing.Point(131, 198);
-            this.txtNgayBatDau.Name = "txtNgayBatDau";
-            this.txtNgayBatDau.Size = new System.Drawing.Size(204, 22);
-            this.txtNgayBatDau.TabIndex = 10;
-            // 
-            // txtNgayKetThuc
-            // 
-            this.txtNgayKetThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgayKetThuc.Location = new System.Drawing.Point(131, 232);
-            this.txtNgayKetThuc.Name = "txtNgayKetThuc";
-            this.txtNgayKetThuc.Size = new System.Drawing.Size(204, 22);
-            this.txtNgayKetThuc.TabIndex = 11;
-            // 
             // txtTietHoc
             // 
             this.txtTietHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -173,7 +157,7 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(100, 36);
             this.btnThem.TabIndex = 16;
-            this.btnThem.Text = "Thêm";
+            this.btnThem.Text = "Ghi nhận";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -197,11 +181,37 @@
             this.cmbMonHoc.Size = new System.Drawing.Size(204, 24);
             this.cmbMonHoc.TabIndex = 18;
             // 
+            // datNgayBatDau
+            // 
+            this.datNgayBatDau.CustomFormat = "dd/MM/yyyy";
+            this.datNgayBatDau.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datNgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datNgayBatDau.Location = new System.Drawing.Point(131, 198);
+            this.datNgayBatDau.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
+            this.datNgayBatDau.Name = "datNgayBatDau";
+            this.datNgayBatDau.Size = new System.Drawing.Size(204, 24);
+            this.datNgayBatDau.TabIndex = 19;
+            this.datNgayBatDau.Value = new System.DateTime(2017, 1, 1, 0, 0, 0, 0);
+            // 
+            // datNgayKetThuc
+            // 
+            this.datNgayKetThuc.CustomFormat = "dd/MM/yyyy";
+            this.datNgayKetThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datNgayKetThuc.Location = new System.Drawing.Point(131, 232);
+            this.datNgayKetThuc.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
+            this.datNgayKetThuc.Name = "datNgayKetThuc";
+            this.datNgayKetThuc.Size = new System.Drawing.Size(204, 24);
+            this.datNgayKetThuc.TabIndex = 20;
+            this.datNgayKetThuc.Value = new System.DateTime(2017, 1, 1, 0, 0, 0, 0);
+            // 
             // frmThemQuanLiGiangDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 281);
+            this.Controls.Add(this.datNgayKetThuc);
+            this.Controls.Add(this.datNgayBatDau);
             this.Controls.Add(this.cmbMonHoc);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnThem);
@@ -209,8 +219,6 @@
             this.Controls.Add(this.cmbTenGiaoVien);
             this.Controls.Add(this.txtDiaDiem);
             this.Controls.Add(this.txtTietHoc);
-            this.Controls.Add(this.txtNgayKetThuc);
-            this.Controls.Add(this.txtNgayBatDau);
             this.Controls.Add(this.lblDiaDiem);
             this.Controls.Add(this.lblTietHoc);
             this.Controls.Add(this.lblNgayKetThuc);
@@ -237,8 +245,6 @@
         private System.Windows.Forms.Label lblNgayKetThuc;
         private System.Windows.Forms.Label lblTietHoc;
         private System.Windows.Forms.Label lblDiaDiem;
-        private System.Windows.Forms.TextBox txtNgayBatDau;
-        private System.Windows.Forms.TextBox txtNgayKetThuc;
         private System.Windows.Forms.TextBox txtTietHoc;
         private System.Windows.Forms.TextBox txtDiaDiem;
         private System.Windows.Forms.ComboBox cmbTenGiaoVien;
@@ -246,5 +252,7 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.ComboBox cmbMonHoc;
+        private System.Windows.Forms.DateTimePicker datNgayBatDau;
+        private System.Windows.Forms.DateTimePicker datNgayKetThuc;
     }
 }

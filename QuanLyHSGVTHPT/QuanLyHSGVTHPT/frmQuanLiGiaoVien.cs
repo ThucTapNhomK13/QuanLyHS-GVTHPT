@@ -109,19 +109,26 @@ namespace QuanLyHSGVTHPT
             using (frmAddEdit fmAE = new frmAddEdit())
             {
                 int selectIndex = dgvGiaoVien.SelectedRows[0].Index;
-                string id = dgvGiaoVien[0, selectIndex].Value.ToString();
-
-                fmAE.Id = id;
-                if (fmAE.ShowDialog() == DialogResult.OK)
+                if(selectIndex <= 0)
                 {
-                    GiaoVien gv = fmAE.getGiaoVien();
-                    if (bsGV.UpdateGiaoVien(gv))
-                        MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    else
-                        MessageBox.Show("Sửa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Chọn bản ghi cần sửa!");
                 }
                 else
-                    return;
+                {
+                    string id = dgvGiaoVien[0, selectIndex].Value.ToString();
+
+                    fmAE.Id = id;
+                    if (fmAE.ShowDialog() == DialogResult.OK)
+                    {
+                        GiaoVien gv = fmAE.getGiaoVien();
+                        if (bsGV.UpdateGiaoVien(gv))
+                            MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MessageBox.Show("Sửa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                        return;
+                }               
             }
         }
 
