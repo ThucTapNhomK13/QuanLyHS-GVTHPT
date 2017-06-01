@@ -59,8 +59,8 @@ namespace QuanLyHSGVTHPT
         public QuanLiGiangDay getQuanLiGiangDay()
         {
             QuanLiGiangDay ql = new QuanLiGiangDay();
-            ql.MaGiaoVien = cmbTenGiaoVien.SelectedItem.ToString();
-            ql.MaMonHoc = cmbMonHoc.SelectedItem.ToString();
+            ql.MaGiaoVien = cmbTenGiaoVien.SelectedValue.ToString();
+            ql.MaMonHoc = cmbMonHoc.SelectedValue.ToString();
             ql.MaLop = cmbTenLop.SelectedValue.ToString();
             ql.NgayBatDau = datNgayBatDau.Value;
             ql.NgayKetThuc = datNgayKetThuc.Value;
@@ -74,11 +74,17 @@ namespace QuanLyHSGVTHPT
             QuanLiGiangDay quanli = getQuanLiGiangDay();
             if(isupdate)
             {
+                cmbTenGiaoVien.SelectedValue = quanli.MaGiaoVien;
+                cmbMonHoc.SelectedValue = quanli.MaMonHoc;
+                cmbTenLop.SelectedValue = quanli.MaLop;
+                txtTietHoc.Text = quanli.TietHoc;
+                txtDiaDiem.Text = quanli.DiaDiem;
 
                 if(ql.Update(quanli))
                     MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                     MessageBox.Show("Sửa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
             }
             else
             {
@@ -86,6 +92,7 @@ namespace QuanLyHSGVTHPT
                     MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                     MessageBox.Show("Thêm thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
             }           
         }
 

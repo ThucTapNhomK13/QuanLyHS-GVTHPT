@@ -36,6 +36,7 @@ namespace QuanLyHSGVTHPT
         {
             frmThemQuanLiGiangDay frmThem = new frmThemQuanLiGiangDay();
             frmThem.ShowDialog();
+            GetThongTinGiangDay();
         }
 
         private void btnChinhSua_Click(object sender, EventArgs e)
@@ -57,6 +58,7 @@ namespace QuanLyHSGVTHPT
                 ql.NgayKetThuc = DateTime.Parse(dgr.Cells["ngayketthuc"].Value.ToString());
                 frmThemQuanLiGiangDay frmThem = new frmThemQuanLiGiangDay(ql, true);
                 frmThem.ShowDialog();
+                GetThongTinGiangDay();
             }
         }
 
