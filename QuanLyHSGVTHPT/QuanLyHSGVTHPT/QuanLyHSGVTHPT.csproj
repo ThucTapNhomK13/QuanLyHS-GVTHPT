@@ -52,6 +52,12 @@
     <Compile Include="frmAddEdit.Designer.cs">
       <DependentUpon>frmAddEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddEditStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditStudent.Designer.cs">
+      <DependentUpon>frmAddEditStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHelp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="frmQuanLiGiaoVien.Designer.cs">
       <DependentUpon>frmQuanLiGiaoVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuanLiHocSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLiHocSinh.Designer.cs">
+      <DependentUpon>frmQuanLiHocSinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThemQuanLiGiangDay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,9 @@
     <EmbeddedResource Include="frmAddEdit.resx">
       <DependentUpon>frmAddEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditStudent.resx">
+      <DependentUpon>frmAddEditStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHelp.resx">
       <DependentUpon>frmHelp.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLiGiaoVien.resx">
       <DependentUpon>frmQuanLiGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLiHocSinh.resx">
+      <DependentUpon>frmQuanLiHocSinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemQuanLiGiangDay.resx">
       <DependentUpon>frmThemQuanLiGiangDay.cs</DependentUpon>

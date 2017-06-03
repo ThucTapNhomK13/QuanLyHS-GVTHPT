@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS;
+using Obj;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,40 +10,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using BUS;
-using Obj;
-
 namespace QuanLyHSGVTHPT
 {
-    public partial class frmQuanLiGiaoVien : Form
+    public partial class frmQuanLiHocSinh : Form
     {
 
         bool mv;
         int x, y;
-        private BUSGiaoVien bsGV = new BUSGiaoVien();
-
+        private BUSHocSinh bsGV = new BUSHocSinh();
 
         private void GetAll()
         {
-            dgvHocSinh.DataSource = bsGV.SelectGiaoVien();
+            dgvHocSinh.DataSource = bsGV.SelectHocSinh();
         }
 
         //private void GetSearch ()
         //{
-        //    dgvGiaoVien.DataSource = bsGV.Search(txtTimKiem.Text);
+        //    dgvHocSinh.DataSource = bsGV.Search(txtTimKiem.Text);
         //}
 
-
-        public frmQuanLiGiaoVien()
+        public frmQuanLiHocSinh()
         {
             InitializeComponent();
         }
-
-        
-
-
-
-
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -61,8 +52,6 @@ namespace QuanLyHSGVTHPT
             WindowState = FormWindowState.Minimized;
         }
 
-
-        
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             mv = true;
@@ -75,7 +64,7 @@ namespace QuanLyHSGVTHPT
             mv = false;
         }
 
-        private void frmQuanLyGiaoVien_Load(object sender, EventArgs e)
+        private void frmQuanLyHocSinh_Load(object sender, EventArgs e)
         {
             GetAll();
         }
@@ -87,16 +76,16 @@ namespace QuanLyHSGVTHPT
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            using (frmAddEdit fmAE = new frmAddEdit())
+            using (frmAddEditStudent fmAE = new frmAddEditStudent())
             {
                 fmAE.Id = null;
                 if (fmAE.ShowDialog() == DialogResult.OK)
                 {
-                    GiaoVien gv = fmAE.getGiaoVien();
-                    if (bsGV.InsertGiaoVien(gv))
+                    HocSinh gv = fmAE.getHocSinh();
+                    if (bsGV.InsertHocSinh(gv))
                         MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
-                        MessageBox.Show("Thêm thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);  
+                        MessageBox.Show("Thêm thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                     return;
@@ -106,37 +95,22 @@ namespace QuanLyHSGVTHPT
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            using (frmAddEdit fmAE = new frmAddEdit())
+            using (frmAddEditStudent fmAE = new frmAddEditStudent())
             {
-<<<<<<< HEAD
                 int selectIndex = dgvHocSinh.SelectedRows[0].Index;
                 string id = dgvHocSinh[0, selectIndex].Value.ToString();
 
                 fmAE.Id = id;
                 if (fmAE.ShowDialog() == DialogResult.OK)
-=======
-                int selectIndex = dgvGiaoVien.SelectedRows[0].Index;
-                if(selectIndex <= 0)
->>>>>>> origin/master
                 {
-                    MessageBox.Show("Chọn bản ghi cần sửa!");
+                    HocSinh gv = fmAE.getHocSinh();
+                    if (bsGV.UpdateHocSinh(gv))
+                        MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Sửa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
-                {
-                    string id = dgvGiaoVien[0, selectIndex].Value.ToString();
-
-                    fmAE.Id = id;
-                    if (fmAE.ShowDialog() == DialogResult.OK)
-                    {
-                        GiaoVien gv = fmAE.getGiaoVien();
-                        if (bsGV.UpdateGiaoVien(gv))
-                            MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        else
-                            MessageBox.Show("Sửa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else
-                        return;
-                }               
+                    return;
             }
         }
 
@@ -150,7 +124,7 @@ namespace QuanLyHSGVTHPT
             int selectIndex = dgvHocSinh.SelectedRows[0].Index;
             string id = dgvHocSinh[0, selectIndex].Value.ToString();
 
-            if (bsGV.DeleteGiaoVien(id))
+            if (bsGV.DeleteHocSinh(id))
                 MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 MessageBox.Show("Xóa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);

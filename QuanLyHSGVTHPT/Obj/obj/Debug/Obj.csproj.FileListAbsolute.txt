@@ -18,3 +18,8 @@ C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\bin\Debug\O
 C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\obj\Debug\Obj.csprojResolveAssemblyReference.cache
 C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\obj\Debug\Obj.dll
 C:\Users\MienAnh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\obj\Debug\Obj.pdb
+C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\bin\Debug\Obj.dll
+C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\bin\Debug\Obj.pdb
+C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\obj\Debug\Obj.csprojResolveAssemblyReference.cache
+C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\obj\Debug\Obj.dll
+C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\Obj\obj\Debug\Obj.pdb

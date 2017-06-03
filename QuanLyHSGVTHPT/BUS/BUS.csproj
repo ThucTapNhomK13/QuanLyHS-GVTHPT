@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUSGiaoVien.cs" />
+    <Compile Include="BUSHocSinh.cs" />
     <Compile Include="BUSQuanLiGiangDay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
