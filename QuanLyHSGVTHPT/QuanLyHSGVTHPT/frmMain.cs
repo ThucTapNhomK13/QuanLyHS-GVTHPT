@@ -19,21 +19,42 @@ namespace QuanLyHSGVTHPT
 
         private void menuquanlygiaovien_Click(object sender, EventArgs e)
         {
-            frmQuanLiGiaoVien qlgv = new frmQuanLiGiaoVien();
-            qlgv.ShowDialog();
+           
         }
 
         private void menuhuongdansudung_Click(object sender, EventArgs e)
         {
-            frmHelp help = new frmHelp();
-            help.ShowDialog();
+            
         }
 
         private void menuquanlygiangday_Click(object sender, EventArgs e)
         {
+            
+
+        }
+
+        private void itemthemhocsinh_Click(object sender, EventArgs e)
+        {
+            frmQuanLiHocSinh ql = new frmQuanLiHocSinh();
+            ql.ShowDialog();
+        }
+
+        private void quảnLíGiáoViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuanLiGiaoVien qlgv = new frmQuanLiGiaoVien();
+            qlgv.ShowDialog();
+        }
+
+        private void quảnLiGiảngDạyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             frmQuanLiGiangDay ql = new frmQuanLiGiangDay();
             ql.ShowDialog();
+        }
 
+        private void hướngDẫnSửDụngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHelp help = new frmHelp();
+            help.ShowDialog();
         }
     }
 }

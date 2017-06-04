@@ -48,7 +48,7 @@ namespace QuanLyHSGVTHPT
                     this.txtMa.Text = dr["mahocsinh"].ToString();
                     this.txtMa.Enabled = false;
 
-                    this.txtHoTen.Text = dr["hovaten"].ToString();
+                    this.txtHoTen.Text = dr["hocvaten"].ToString();
                     this.datNgaySinh.Text = dr["ngaysinh"].ToString();
 
                     this.cmdGioiTinh.Text = dr["gioitinh"].ToString();
@@ -71,7 +71,7 @@ namespace QuanLyHSGVTHPT
             HocSinh hs = new HocSinh();
             hs.mahocsinh = txtMa.Text;
             hs.hocvaten = XuLyChuoi.VietHoaChuCaiDau(txtHoTen.Text);
-            hs.ngaysinh = DateTime.Parse(datNgaySinh.Text);
+            hs.ngaysinh = datNgaySinh.Value;
             hs.gioitinh = XuLyChuoi.VietHoaChuCaiDau(cmdGioiTinh.Text);
             hs.tongiao = XuLyChuoi.VietHoaChuCaiDau(txtTonGiao.Text);
             hs.quequan = XuLyChuoi.VietHoaChuCaiDau(txtQueQuan.Text);
@@ -80,6 +80,7 @@ namespace QuanLyHSGVTHPT
             hs.nghenghiepbo = XuLyChuoi.VietHoa(txtNgheghiepbo.Text);
             hs.sodienthoai = txtSDT.Text;
             hs.hotenme = XuLyChuoi.VietHoa(txtHotenme.Text);
+            hs.nghenghiepme = XuLyChuoi.VietHoa(txtNghenghiepme.Text);
             hs.hotenbo = XuLyChuoi.VietHoa(txtHotebo.Text);
             hs.lopma = txtLopma.Text;
             return hs;
@@ -129,6 +130,12 @@ namespace QuanLyHSGVTHPT
         private void frmAddEdit_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAdd_Click_1(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void panel1_MouseUp(object sender, MouseEventArgs e)

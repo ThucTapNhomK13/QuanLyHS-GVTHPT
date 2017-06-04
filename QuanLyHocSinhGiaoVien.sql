@@ -1,5 +1,5 @@
 ﻿
-
+drop database QuanLyHocSinhGiaoVien
 CREATE DATABASE [QuanLyHocSinhGiaoVien]
 GO
 
@@ -91,8 +91,8 @@ CREATE TABLE QuanLiGiangDay(
 	PRIMARY KEY(giaovienma, monhocma, lopma)
 )
 
-alter table QuanLiGiangDay add column tiethoc varchar(10);
-alter table QuanLiGiangDay add column diadiem varchar(10);
+alter table QuanLiGiangDay add  tiethoc varchar(10);
+alter table QuanLiGiangDay add  diadiem varchar(10);
 
 
 CREATE FUNCTION [dbo].[func_ThongTinGiangDay]()

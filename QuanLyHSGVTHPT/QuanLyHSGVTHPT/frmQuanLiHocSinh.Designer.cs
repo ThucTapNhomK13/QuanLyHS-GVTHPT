@@ -151,6 +151,7 @@
             this.btnSearch.TabIndex = 5;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
             // 
             // btnDelete
             // 
@@ -165,6 +166,7 @@
             this.btnDelete.TabIndex = 9;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click_1);
             // 
             // btnEdit
             // 
@@ -179,6 +181,7 @@
             this.btnEdit.TabIndex = 8;
             this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click_1);
             // 
             // btnAdd
             // 
@@ -193,6 +196,7 @@
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
             // btnReset
             // 
@@ -207,6 +211,7 @@
             this.btnReset.TabIndex = 10;
             this.btnReset.Text = "Làm mới";
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click_1);
             // 
             // dgvHocSinh
             // 
@@ -236,7 +241,7 @@
             // clMa
             // 
             this.clMa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.clMa.DataPropertyName = "magiaovien";
+            this.clMa.DataPropertyName = "mahocsinh";
             this.clMa.FillWeight = 329.9492F;
             this.clMa.HeaderText = "Mã";
             this.clMa.Name = "clMa";
@@ -245,7 +250,7 @@
             // clHoTen
             // 
             this.clHoTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.clHoTen.DataPropertyName = "hovaten";
+            this.clHoTen.DataPropertyName = "hocvaten";
             this.clHoTen.FillWeight = 80.83756F;
             this.clHoTen.HeaderText = "Họ tên";
             this.clHoTen.Name = "clHoTen";
@@ -354,6 +359,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmQuanLiHocSinh";
             this.Text = "frmQuanLiHocSinh";
+            this.Load += new System.EventHandler(this.frmQuanLiHocSinh_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinh)).EndInit();

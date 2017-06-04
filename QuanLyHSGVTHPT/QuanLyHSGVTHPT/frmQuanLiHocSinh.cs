@@ -17,16 +17,16 @@ namespace QuanLyHSGVTHPT
 
         bool mv;
         int x, y;
-        private BUSHocSinh bsGV = new BUSHocSinh();
+        private BUSHocSinh bsHs = new BUSHocSinh();
 
         private void GetAll()
         {
-            dgvHocSinh.DataSource = bsGV.SelectHocSinh();
+            dgvHocSinh.DataSource = bsHs.SelectHocSinh();
         }
 
         //private void GetSearch ()
         //{
-        //    dgvHocSinh.DataSource = bsGV.Search(txtTimKiem.Text);
+        //    dgvHocSinh.DataSource = bsHs.Search(txtTimKiem.Text);
         //}
 
         public frmQuanLiHocSinh()
@@ -71,7 +71,7 @@ namespace QuanLyHSGVTHPT
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            dgvHocSinh.DataSource = bsGV.Search(txtTimKiem.Text);
+            dgvHocSinh.DataSource = bsHs.Search(txtTimKiem.Text);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -81,8 +81,8 @@ namespace QuanLyHSGVTHPT
                 fmAE.Id = null;
                 if (fmAE.ShowDialog() == DialogResult.OK)
                 {
-                    HocSinh gv = fmAE.getHocSinh();
-                    if (bsGV.InsertHocSinh(gv))
+                    HocSinh hs = fmAE.getHocSinh();
+                    if (bsHs.InsertHocSinh(hs))
                         MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
                         MessageBox.Show("Thêm thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -104,7 +104,7 @@ namespace QuanLyHSGVTHPT
                 if (fmAE.ShowDialog() == DialogResult.OK)
                 {
                     HocSinh gv = fmAE.getHocSinh();
-                    if (bsGV.UpdateHocSinh(gv))
+                    if (bsHs.UpdateHocSinh(gv))
                         MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
                         MessageBox.Show("Sửa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -124,7 +124,7 @@ namespace QuanLyHSGVTHPT
             int selectIndex = dgvHocSinh.SelectedRows[0].Index;
             string id = dgvHocSinh[0, selectIndex].Value.ToString();
 
-            if (bsGV.DeleteHocSinh(id))
+            if (bsHs.DeleteHocSinh(id))
                 MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 MessageBox.Show("Xóa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -138,6 +138,79 @@ namespace QuanLyHSGVTHPT
         private void btnExit_MouseLeave(object sender, EventArgs e)
         {
             btnExit.ForeColor = Color.Black;
+        }
+
+        private void btnAdd_Click_1(object sender, EventArgs e)
+        {
+            using (frmAddEditStudent fmAE = new frmAddEditStudent())
+            {
+                fmAE.Id = null;
+                if (fmAE.ShowDialog() == DialogResult.OK)
+                {
+                    HocSinh gv = fmAE.getHocSinh();
+                    if (bsHs.InsertHocSinh(gv))
+                        MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Thêm thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                    return;
+
+            }
+        }
+
+        private void btnEdit_Click_1(object sender, EventArgs e)
+        {
+            using (frmAddEditStudent fmAE = new frmAddEditStudent())
+            {
+                int selectIndex = dgvHocSinh.CurrentRow.Index;
+
+                if (selectIndex < 0)
+                {
+                    MessageBox.Show("Chọn bản ghi cần sửa!");
+                }
+                else
+                {
+                    string id = dgvHocSinh[0, selectIndex].Value.ToString();
+                    fmAE.Id = id;
+                    if (fmAE.ShowDialog() == DialogResult.OK)
+                    {
+                        HocSinh hs = fmAE.getHocSinh();
+                        if (bsHs.UpdateHocSinh(hs))
+                            MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MessageBox.Show("Sửa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                        return;
+                }
+            }
+        }
+
+        private void btnDelete_Click_1(object sender, EventArgs e)
+        {
+            int selectIndex = dgvHocSinh.CurrentRow.Index;       
+            string id = dgvHocSinh[0, selectIndex].Value.ToString();
+
+            if (bsHs.DeleteHocSinh(id))
+                MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Xóa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void btnReset_Click_1(object sender, EventArgs e)
+        {
+            GetAll();
+        }
+
+        private void frmQuanLiHocSinh_Load(object sender, EventArgs e)
+        {
+            GetAll();
+        }
+
+        private void btnSearch_Click_1(object sender, EventArgs e)
+        {
+            dgvHocSinh.DataSource = bsHs.Search(txtTimKiem.Text);
         }
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)

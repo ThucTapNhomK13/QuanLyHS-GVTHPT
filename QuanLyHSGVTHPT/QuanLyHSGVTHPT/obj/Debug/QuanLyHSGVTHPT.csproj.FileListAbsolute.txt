@@ -127,3 +127,9 @@ C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHS
 C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\System.Threading.Thread.dll
 C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\Microsoft.Build.Framework.xml
 C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\Microsoft.Build.Utilities.Core.xml
+C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\Microsoft.Build.Framework.dll
+C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\Microsoft.Build.Tasks.Core.dll
+C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\Microsoft.Build.Utilities.Core.dll
+C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\System.Threading.Thread.dll
+C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\Microsoft.Build.Framework.xml
+C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\QuanLyHSGVTHPT\bin\Debug\Microsoft.Build.Utilities.Core.xml

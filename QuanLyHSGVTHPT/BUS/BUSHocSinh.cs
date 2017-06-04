@@ -36,7 +36,7 @@ namespace BUS
         public bool InsertHocSinh(HocSinh gv)
         {
             string sqlQuery = @" if not exists ";
-            sqlQuery += " ( select * from HocSinh where mahocsinh = @ma) ";
+            sqlQuery += " ( select * from HocSinh where mahocsinh = @mahocsinh) ";
             sqlQuery += " insert into HocSinh ";
             sqlQuery += " values ";
             sqlQuery += " ( @mahocsinh, @hocvaten, @ngaysinh, @gioitinh, @tongiao, @quequan, ";
@@ -57,6 +57,7 @@ namespace BUS
             parameters.Add("@nghenghiepme", gv.nghenghiepme);
             parameters.Add("@sodienthoai", gv.sodienthoai);
             parameters.Add("@lopma", gv.lopma);
+ 
 
             return con.InsertUpdateDelete(sqlQuery, false, parameters);
         }

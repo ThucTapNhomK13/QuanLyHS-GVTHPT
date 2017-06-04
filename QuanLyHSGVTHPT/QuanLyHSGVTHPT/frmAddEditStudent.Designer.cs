@@ -383,6 +383,7 @@
             this.btnAdd.TabIndex = 54;
             this.btnAdd.Text = "Lưu";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
             // label9
             // 
