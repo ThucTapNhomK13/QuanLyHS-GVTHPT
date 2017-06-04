@@ -109,14 +109,15 @@ namespace QuanLyHSGVTHPT
             using (frmAddEdit fmAE = new frmAddEdit())
             {
                 int selectIndex = dgvGiaoVien.SelectedRows[0].Index;
-                fmAE.Id = selectIndex.ToString();
-                if(selectIndex <= 0)
+                
+                if(selectIndex < 0)
                 {
                     MessageBox.Show("Chọn bản ghi cần sửa!");
                 }
                 else
                 {
                     string id = dgvGiaoVien[0, selectIndex].Value.ToString();
+                    fmAE.Id = id;
                     if (fmAE.ShowDialog() == DialogResult.OK)
                     {
                         GiaoVien gv = fmAE.getGiaoVien();
