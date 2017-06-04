@@ -1,6 +1,6 @@
 ﻿namespace QuanLyHSGVTHPT
 {
-    partial class frmQuanLyGiaoVien
+    partial class frmQuanLiGiaoVien
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnMin = new System.Windows.Forms.Button();
             this.btnMax = new System.Windows.Forms.Button();
-            this.dgvGiaoVien = new System.Windows.Forms.DataGridView();
+            this.dgvHocSinh = new System.Windows.Forms.DataGridView();
             this.clMa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,7 +54,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinh)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -135,12 +135,12 @@
             this.btnMax.UseVisualStyleBackColor = true;
             this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
             // 
-            // dgvGiaoVien
+            // dgvHocSinh
             // 
-            this.dgvGiaoVien.AllowUserToAddRows = false;
-            this.dgvGiaoVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvGiaoVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dgvGiaoVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvHocSinh.AllowUserToAddRows = false;
+            this.dgvHocSinh.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvHocSinh.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvHocSinh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clMa,
             this.clHoTen,
             this.clNgaySinh,
@@ -154,11 +154,11 @@
             this.clChuyenMon,
             this.clTinhTrang,
             this.clLuong});
-            this.dgvGiaoVien.Location = new System.Drawing.Point(12, 109);
-            this.dgvGiaoVien.Name = "dgvGiaoVien";
-            this.dgvGiaoVien.ShowEditingIcon = false;
-            this.dgvGiaoVien.Size = new System.Drawing.Size(1230, 387);
-            this.dgvGiaoVien.TabIndex = 3;
+            this.dgvHocSinh.Location = new System.Drawing.Point(12, 109);
+            this.dgvHocSinh.Name = "dgvHocSinh";
+            this.dgvHocSinh.ShowEditingIcon = false;
+            this.dgvHocSinh.Size = new System.Drawing.Size(1230, 387);
+            this.dgvHocSinh.TabIndex = 3;
             // 
             // clMa
             // 
@@ -352,7 +352,7 @@
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // frmQuanLyGiaoVien
+            // frmQuanLiGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -364,16 +364,16 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.dgvGiaoVien);
+            this.Controls.Add(this.dgvHocSinh);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmQuanLyGiaoVien";
+            this.Name = "frmQuanLiGiaoVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý giáo viên";
             this.Load += new System.EventHandler(this.frmQuanLyGiaoVien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,7 +385,7 @@
         private System.Windows.Forms.Button btnMin;
         private System.Windows.Forms.Button btnMax;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvGiaoVien;
+        private System.Windows.Forms.DataGridView dgvHocSinh;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button btnEdit;

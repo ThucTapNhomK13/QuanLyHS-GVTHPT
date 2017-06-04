@@ -82,3 +82,50 @@ CREATE TABLE KetQuaHocTap(
 )
 	
 
+CREATE TABLE QuanLiGiangDay(
+	[giaovienma] [varchar](10) REFERENCES GiaoVien(magiaovien),
+	[monhocma] [varchar](10) REFERENCES MonHoc(mamonhoc),
+	[lopma] [varchar](10) REFERENCES Lop(malop),
+	[ngaybatdau] [datetime] NULL,
+	[ngayketthuc] [datetime] NULL,
+	PRIMARY KEY(giaovienma, monhocma, lopma)
+)
+
+alter table QuanLiGiangDay add column tiethoc varchar(10);
+alter table QuanLiGiangDay add column diadiem varchar(10);
+
+
+CREATE FUNCTION [dbo].[func_ThongTinGiangDay]()
+RETURNS TABLE
+AS
+	RETURN (SELECT A.hovaten, mh.tenmonhoc, A.lopma, A.tiethoc, A.diadiem			FROM MonHoc mh inner join (SELECT gv.hovaten, ql.monhocma,				ql.lopma, ql.tiethoc, ql.diadiem FROM QuanLiGiangDay ql inner			join GiaoVien gv ON gv.magiaovien = ql.giaovienma) A
+			ON A.monhocma=mh.mamonhoc)
+			
+
+create function [dbo].[func_ThongTinGiaoVien]()
+returns table
+as 
+return (select gv.magiaovien, gv.hovaten, gv.ngaysinh, gv.gioitinh from GiaoVien gv)
+
+
+CREATE FUNCTION [dbo].[func_ThoiKhoaBieu]()
+RETURNS TABLE
+AS
+	RETURN (SELECT A.hovaten, mh.tenmonhoc, A.lopma, A.tiethoc, A.diadiem			FROM MonHoc mh inner join (SELECT gv.hovaten, ql.monhocma,				ql.lopma, ql.tiethoc, ql.diadiem FROM QuanLiGiangDay ql inner			join GiaoVien gv ON gv.magiaovien = ql.giaovienma) A
+			ON A.monhocma=mh.mamonhoc)
+
+
+GO
+
+CREATE proc [dbo].[sp_ThemQuanLiGiangDay](@magiaovien varchar(10), @mamonhoc varchar(10), @malop varchar(10), @ngaybatdau datetime, @ngayketthuc datetime, @tiethoc varchar(10), @diadiem varchar(10))
+as
+begin
+	insert into QuanLiGiangDay values(@magiaovien, @mamonhoc, @malop,		@ngaybatdau, @ngayketthuc, @tiethoc, @diadiem)
+end
+
+
+
+
+
+
+
