@@ -95,6 +95,7 @@
             this.btnMin.TabIndex = 3;
             this.btnMin.Text = "-";
             this.btnMin.UseVisualStyleBackColor = true;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click_1);
             // 
             // btnMax
             // 
@@ -111,6 +112,7 @@
             this.btnMax.TabIndex = 2;
             this.btnMax.Text = "+";
             this.btnMax.UseVisualStyleBackColor = true;
+            this.btnMax.Click += new System.EventHandler(this.btnMax_Click_1);
             // 
             // btnExit
             // 
@@ -126,6 +128,7 @@
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
             // 
             // txtTimKiem
             // 
@@ -357,6 +360,7 @@
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmQuanLiHocSinh";
             this.Text = "frmQuanLiHocSinh";
             this.Load += new System.EventHandler(this.frmQuanLiHocSinh_Load);

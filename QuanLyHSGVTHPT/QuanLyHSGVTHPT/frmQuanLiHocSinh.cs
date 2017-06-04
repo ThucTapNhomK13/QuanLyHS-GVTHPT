@@ -218,5 +218,20 @@ namespace QuanLyHSGVTHPT
             if (mv)
                 SetDesktopLocation(Cursor.Position.X - x, Cursor.Position.Y - y);
         }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMax_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMin_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
