@@ -339,7 +339,7 @@
             // 
             this.txtMa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMa.Location = new System.Drawing.Point(223, 64);
+            this.txtMa.Location = new System.Drawing.Point(225, 64);
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(114, 20);
             this.txtMa.TabIndex = 38;
@@ -437,6 +437,7 @@
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddEditStudent";
             this.Text = "frmAddEditStudent";
             this.panel1.ResumeLayout(false);

@@ -23,7 +23,7 @@ namespace QuanLyHSGVTHPT
 
         private void GetAll()
         {
-            dgvHocSinh.DataSource = bsGV.SelectGiaoVien();
+            dgvGiaoVien.DataSource = bsGV.SelectGiaoVien();
         }
 
         //private void GetSearch ()
@@ -82,7 +82,7 @@ namespace QuanLyHSGVTHPT
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            dgvHocSinh.DataSource = bsGV.Search(txtTimKiem.Text);
+            dgvGiaoVien.DataSource = bsGV.Search(txtTimKiem.Text);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -108,24 +108,15 @@ namespace QuanLyHSGVTHPT
         {
             using (frmAddEdit fmAE = new frmAddEdit())
             {
-<<<<<<< HEAD
-                int selectIndex = dgvHocSinh.SelectedRows[0].Index;
-                string id = dgvHocSinh[0, selectIndex].Value.ToString();
-
-                fmAE.Id = id;
-                if (fmAE.ShowDialog() == DialogResult.OK)
-=======
                 int selectIndex = dgvGiaoVien.SelectedRows[0].Index;
+                fmAE.Id = selectIndex.ToString();
                 if(selectIndex <= 0)
->>>>>>> origin/master
                 {
                     MessageBox.Show("Chọn bản ghi cần sửa!");
                 }
                 else
                 {
                     string id = dgvGiaoVien[0, selectIndex].Value.ToString();
-
-                    fmAE.Id = id;
                     if (fmAE.ShowDialog() == DialogResult.OK)
                     {
                         GiaoVien gv = fmAE.getGiaoVien();
@@ -147,14 +138,17 @@ namespace QuanLyHSGVTHPT
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            int selectIndex = dgvHocSinh.SelectedRows[0].Index;
-            string id = dgvHocSinh[0, selectIndex].Value.ToString();
+            int selectIndex = dgvGiaoVien.SelectedRows[0].Index;
+            string id = dgvGiaoVien[0, selectIndex].Value.ToString();
 
             if (bsGV.DeleteGiaoVien(id))
                 MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 MessageBox.Show("Xóa thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+
+
 
         private void btnExit_MouseHover(object sender, EventArgs e)
         {

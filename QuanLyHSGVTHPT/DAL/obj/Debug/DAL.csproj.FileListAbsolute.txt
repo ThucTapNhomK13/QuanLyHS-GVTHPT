@@ -33,3 +33,10 @@ C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\Ob
 C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.dll
 C:\Users\LeMinh\Documents\GitHub\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.pdb
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\DAL.dll
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\DAL.pdb
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\Obj.dll
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\bin\Debug\Obj.pdb
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.dll
+C:\Users\mkcuong\Documents\GitHub\TTNhom\QuanLyHS-GVTHPT\QuanLyHSGVTHPT\DAL\obj\Debug\DAL.pdb
